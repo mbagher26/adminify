@@ -3,7 +3,7 @@ import NewUser from "../pages/newuser/NewUser";
 import Products from "../pages/products/Products";
 import UserList from "../pages/users/UserList";
 
-const Routes = [
+const routes = [
           { path: '/', element: <Home /> },
           { path: '/home', element: <Home /> },
           { path: '/users', element: <UserList /> },
@@ -11,4 +11,4 @@ const Routes = [
           { path: '/products', element: <Products/>}
 ]
 
-export default Routes
+export default routes
