@@ -1,0 +1,30 @@
+.topbar {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+}
+
+.topbarwraper {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+}
+
+.topleft {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+}
+
+.topright {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+}
+
+.container-icon {
+          cursor: pointer;
+}
