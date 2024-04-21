@@ -14,15 +14,15 @@ const Header = () => {
                     <Container fixed maxWidth='xl' className="topbar">
                               <div className="topbarwraper">
                                         <div className="topleft">
-                                                  <Typography variant="h4" gutterBottom>
+                                                  <Typography variant="h4" color="primary" gutterBottom>
                                                             Adminify
                                                   </Typography>
-                                                  <FavoriteIcon color='error' fontSize='large' />
+                                                  <FavoriteIcon color="primary" fontSize='large' />
                                         </div>
                                         <div className="topright">
                                                   <div className="container-icon">
                                                             <Badge badgeContent={4} color="error">
-                                                                      <NotificationsNoneIcon  />
+                                                                      <NotificationsNoneIcon />
                                                             </Badge>
                                                   </div>
                                                   <div className="container-icon">
@@ -31,7 +31,7 @@ const Header = () => {
                                                             </Badge>
                                                   </div>
                                                   <div className="container-icon">
-                                                            <LanguageIcon  />
+                                                            <LanguageIcon />
                                                   </div>
                                                   <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
                                         </div>
