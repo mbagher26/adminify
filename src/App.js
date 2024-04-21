@@ -2,6 +2,7 @@ import './App.css';
 import { useRoutes } from 'react-router-dom';
 import routes from './components/Routes';
 import Header from './components/header/Header';
+import Sidebar from './components/sidebar/Sidebar'
 
 function App() {
 
@@ -9,8 +10,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
-      {Router}
+      <Header />
+      <div className="container">
+        <Sidebar />
+        {Router}
+      </div>
     </div>
   );
 }
