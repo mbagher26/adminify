@@ -1,6 +1,7 @@
 import React from 'react'
 import Feature from '../../components/features/Feature'
 import './Home.css'
+import Chart from '../../components/chart/Chart'
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Feature />
       <Feature />
       <Feature />
+      <Chart/>
     </div>
   )
 }
