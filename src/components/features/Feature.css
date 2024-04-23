@@ -1,0 +1,28 @@
+.feature {
+          /* Add feature styles */
+          min-width: 350px;
+          box-shadow: 0 0 15px -10px rgba(0,0,0,0.75);
+}
+
+.featurecontent {
+          /* Add feature content styles */
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: self-start !important;
+          margin: 20px;
+}
+
+.featurecontainer {
+          /* Add feature container styles */
+          display: flex !important;
+          align-items: center !important;
+          gap: 40px;
+}
+
+.feature-item {
+          /* Add feature price styles */
+          display: flex !important;
+          flex-direction: row !important;
+          align-items: center;
+          
+}
