@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { Box } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
-
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const Feature = () => {
           return (
@@ -11,7 +12,14 @@ const Feature = () => {
                                                   Sales
                                         </Typography>
                                         <Box className='featurecontainer'>
-                                                  {/* Feature container content will be added here */}
+                                                  <Stack className='featureprice'>
+                                                            <AttachMoneyIcon fontSize='large' />
+                                                            {/* Sales price will be added here */}
+                                                  </Stack>
+                                                  <Stack className='featureprice'>
+                                                            {/* Sales change will be added here */}
+                                                            <ArrowDownwardIcon color='error' />
+                                                  </Stack>
                                         </Box>
                                         <Typography variant="body2" color='rgb(144, 148, 148)'>
                                                   well meaning and kindly.
