@@ -3,6 +3,7 @@ import { Box, Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import './Feature.css'
 
 const Feature = () => {
           return (
