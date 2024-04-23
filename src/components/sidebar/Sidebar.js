@@ -35,14 +35,14 @@ export default function TemporaryDrawer() {
                                                   </Typography>
                                                   {['Home', 'Analytics', 'Sales'].map((text, index) => (
                                                             <Link key={text} to={text.toLocaleLowerCase() === 'home' ? 'home' : null}>
-                                                                      <ListItem  disablePadding={true} dense={true}>
-                                                                                <ListItemButton  dense={true}>
+                                                                      <ListItem disablePadding={true} dense={true}>
+                                                                                <ListItemButton dense={true}>
                                                                                           <ListItemIcon >
                                                                                                     {index === 0 && <HomeOutlinedIcon />}
                                                                                                     {index === 1 && <TimelineOutlinedIcon />}
                                                                                                     {index === 2 && <TrendingUpOutlinedIcon />}
                                                                                           </ListItemIcon>
-                                                                                          <ListItemText sx={{ color: '#555'}} primary={text} />
+                                                                                          <ListItemText sx={{ color: '#555' }} primary={text} />
                                                                                 </ListItemButton>
                                                                       </ListItem>
                                                             </Link>
@@ -60,16 +60,16 @@ export default function TemporaryDrawer() {
                                                                                           (text.toLowerCase() === 'new user') ? 'newuser' : null
                                                                       }
                                                             >
-                                                                      <ListItem  disablePadding={true} dense={true}>
+                                                                      <ListItem disablePadding={true} dense={true}>
                                                                                 <ListItemButton dense={true}>
                                                                                           <ListItemIcon>
-                                                                                                    <Link to='/users'>{index === 0 && <PersonOutlineOutlinedIcon />}</Link>
-                                                                                                    <Link to='/newuser'>{index === 1 && <PersonOutlineOutlinedIcon />}</Link>
-                                                                                                    <Link to='/products'>{index === 2 && <StorefrontOutlinedIcon />}</Link>
+                                                                                                    {index === 0 && <PersonOutlineOutlinedIcon />}
+                                                                                                    {index === 1 && <PersonOutlineOutlinedIcon />}
+                                                                                                    {index === 2 && <StorefrontOutlinedIcon />}
                                                                                                     {index === 3 && <AttachMoneyOutlinedIcon />}
                                                                                                     {index === 4 && <BarChartOutlinedIcon />}
                                                                                           </ListItemIcon>
-                                                                                          <ListItemText sx={{color:'#555'}} primary={text} />
+                                                                                          <ListItemText sx={{ color: '#555' }} primary={text} />
                                                                                 </ListItemButton>
                                                                       </ListItem>
                                                             </Link>
@@ -88,7 +88,7 @@ export default function TemporaryDrawer() {
                                                                                           {index === 1 && <DynamicFeedIcon />}
                                                                                           {index === 2 && <ChatBubbleOutlineOutlinedIcon />}
                                                                                 </ListItemIcon>
-                                                                                <ListItemText sx={{color:'#555'}} primary={text} />
+                                                                                <ListItemText sx={{ color: '#555' }} primary={text} />
                                                                       </ListItemButton>
                                                             </ListItem>
 
@@ -107,7 +107,7 @@ export default function TemporaryDrawer() {
                                                                                           {index === 1 && <TimelineOutlinedIcon />}
                                                                                           {index === 2 && <WorkOutlineIcon />}
                                                                                 </ListItemIcon>
-                                                                                <ListItemText sx={{color:'#555'}} primary={text} />
+                                                                                <ListItemText sx={{ color: '#555' }} primary={text} />
                                                                       </ListItemButton>
                                                             </ListItem>
 
