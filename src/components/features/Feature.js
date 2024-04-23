@@ -12,11 +12,11 @@ const Feature = () => {
                                                   Sales
                                         </Typography>
                                         <Box className='featurecontainer'>
-                                                  <Stack className='featureprice'>
+                                                  <Stack className='feature-item'>
                                                             <AttachMoneyIcon fontSize='large' />
                                                             {/* Sales price will be added here */}
                                                   </Stack>
-                                                  <Stack className='featureprice'>
+                                                  <Stack className='feature-item'>
                                                             {/* Sales change will be added here */}
                                                             <ArrowDownwardIcon color='error' />
                                                   </Stack>
