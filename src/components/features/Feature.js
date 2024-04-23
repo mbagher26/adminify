@@ -14,7 +14,9 @@ const Feature = () => {
                                         <Box className='featurecontainer'>
                                                   <Stack className='feature-item'>
                                                             <AttachMoneyIcon fontSize='large' />
-                                                            {/* Sales price will be added here */}
+                                                            <Typography color="dark" variant='h4'>
+                                                                      2.415
+                                                            </Typography>
                                                   </Stack>
                                                   <Stack className='feature-item'>
                                                             {/* Sales change will be added here */}
