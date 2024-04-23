@@ -36,7 +36,7 @@ export default function TemporaryDrawer() {
                                                   {['Home', 'Analytics', 'Sales'].map((text, index) => (
                                                             <Link key={text} to={text.toLocaleLowerCase() === 'home' ? 'home' : null}>
                                                                       <ListItem  disablePadding={true} dense={true}>
-                                                                                <ListItemButton disableGutter dense={true}>
+                                                                                <ListItemButton  dense={true}>
                                                                                           <ListItemIcon >
                                                                                                     {index === 0 && <HomeOutlinedIcon />}
                                                                                                     {index === 1 && <TimelineOutlinedIcon />}
