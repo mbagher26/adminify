@@ -34,8 +34,8 @@ export default function TemporaryDrawer() {
                                                             Dashboard
                                                   </Typography>
                                                   {['Home', 'Analytics', 'Sales'].map((text, index) => (
-                                                            <Link to={text.toLocaleLowerCase() === 'home' ? 'home' : null}>
-                                                                      <ListItem key={text} disablePadding={true} dense={true}>
+                                                            <Link key={text} to={text.toLocaleLowerCase() === 'home' ? 'home' : null}>
+                                                                      <ListItem  disablePadding={true} dense={true}>
                                                                                 <ListItemButton disableGutter dense={true}>
                                                                                           <ListItemIcon >
                                                                                                     {index === 0 && <HomeOutlinedIcon />}
@@ -54,13 +54,13 @@ export default function TemporaryDrawer() {
                                                             Quick Menu
                                                   </Typography>
                                                   {['Users', 'New User', 'Products', 'Transactions', 'Reports'].map((text, index) => (
-                                                            <Link
+                                                            <Link key={text}
                                                                       to={(text.toLowerCase() === 'users') ? 'users' :
                                                                                 (text.toLowerCase() === 'products') ? 'products' :
                                                                                           (text.toLowerCase() === 'new user') ? 'newuser' : null
                                                                       }
                                                             >
-                                                                      <ListItem key={text} disablePadding={true} dense={true}>
+                                                                      <ListItem  disablePadding={true} dense={true}>
                                                                                 <ListItemButton dense={true}>
                                                                                           <ListItemIcon>
                                                                                                     <Link to='/users'>{index === 0 && <PersonOutlineOutlinedIcon />}</Link>
