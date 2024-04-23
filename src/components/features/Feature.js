@@ -19,7 +19,9 @@ const Feature = () => {
                                                             </Typography>
                                                   </Stack>
                                                   <Stack className='feature-item'>
-                                                            {/* Sales change will be added here */}
+                                                            <Typography color="rgb(85, 55, 62)" >
+                                                                      -11.4
+                                                            </Typography>
                                                             <ArrowDownwardIcon color='error' />
                                                   </Stack>
                                         </Box>
