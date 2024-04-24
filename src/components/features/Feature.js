@@ -3,6 +3,7 @@ import { Box, Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import { useEffect, useState } from 'react';
 import supabase from '../../SupabaseClient';
 import './Feature.css'
@@ -48,7 +49,7 @@ const Feature = () => {
                                                                       <Typography color="rgb(85, 55, 62)" >
                                                                                 {data.change}
                                                                       </Typography>
-                                                                      <ArrowDownwardIcon color='error' />
+                                                                      {data.change >= 0 ? <ArrowUpwardIcon color='success' /> : <ArrowDownwardIcon color='error' />}
                                                             </Stack>
                                                   </Box>
                                                   <Typography variant="body2" color='rgb(144, 148, 148)'>
