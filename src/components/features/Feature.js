@@ -23,7 +23,6 @@ const Feature = () => {
                               }
                               if (data) {
                                         setFeatureData(data)
-                                        console.log(data);
                               }
                     }
 
@@ -34,7 +33,7 @@ const Feature = () => {
           return (
                     <div className='feature'>
                               {featureData && featureData.map(data => (
-                                        <Box className='featurecontent'>
+                                        <Box key={data.id} className='featurecontent'>
                                                   <Typography sx={{ fontSize: 20 }} color="rgb(76, 62, 75)">
                                                             {data.title}
                                                   </Typography>
