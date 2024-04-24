@@ -11,15 +11,7 @@ const Home = () => {
   return (
     <div className='home'>
       <Grid container  className='feature-grid'>
-        <Grid  >
           <Feature />
-        </Grid>
-        <Grid>
-          <Feature />
-        </Grid>
-        <Grid>
-          <Feature />
-        </Grid>
       </Grid>
 
       <Grid>
