@@ -3,9 +3,33 @@ import { Box, Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { useEffect, useState } from 'react';
+import supabase from '../../SupabaseClient';
 import './Feature.css'
 
 const Feature = () => {
+
+          const [featureData, setFeatureData] = useState(null);
+          
+          useEffect(() => {
+                    const fetchsupabase = async () => {
+                              const { data, error } = await supabase
+                                        .from("feature")
+                                        .select()
+                                        if (error) {
+                                                  console.log(error);
+                                                  setFeatureData(null)
+                                        }
+                                        if (data) {
+                                                  setFeatureData(data)
+                                                  console.log(data);
+                                        }
+                              }
+                              
+                              fetchsupabase()
+                    }, [])
+                    
+
           return (
                     <div className='feature'>
                               <Box className='featurecontent'>
