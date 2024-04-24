@@ -1,16 +1,17 @@
 .feature {
-          min-width: 350px;
-          max-width: 380px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
           height: 125px;
-          box-shadow: 0 0 15px -10px rgba(0,0,0,0.75);
 }
 
 .featurecontent {
-          /* Add feature content styles */
-          display: flex !important;
-          flex-direction: column !important;
-          align-items: self-start !important;
-          margin: 20px;
+         width: 30%;
+         height: 125px;
+          box-shadow: 0 0 15px -10px rgba(0,0,0,0.75);
+          padding: 10px;
 }
 
 .featurecontainer {
@@ -25,5 +26,4 @@
           display: flex !important;
           flex-direction: row !important;
           align-items: center;
-          
 }
