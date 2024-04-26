@@ -2,22 +2,18 @@ import React from 'react'
 import Feature from '../../components/features/Feature'
 import './Home.css'
 import Chart from '../../components/chart/Chart'
-import { xAxisData } from '../../data'
-import Grid from '@mui/material/Grid';
+import { Box } from '@mui/material';
+
 
 const Home = () => {
 
+
   
   return (
-    <div className='home'>
-      <Grid container  className='feature-grid'>
-          <Feature />
-      </Grid>
-
-      <Grid>
-        <Chart data={xAxisData} dataKey="Sale" title='Month Sale' grid />
-      </Grid>
-    </div>
+    <Box className='home'>
+        <Feature />
+        <Chart grid/>
+    </Box>
   )
 }
 
