@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Stack } from '@mui/material';
+import { Box, Grid, Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
@@ -31,9 +31,9 @@ const Feature = () => {
 
 
           return (
-                    <div className='feature'>
+                    <Grid container className='feature'>
                               {featureData && featureData.map(data => (
-                                        <Box key={data.id} className='featurecontent'>
+                                        <Grid xs={12} md={4} key={data.id} className='featurecontent'>
                                                   <Typography sx={{ fontSize: 20 }} color="rgb(76, 62, 75)">
                                                             {data.title}
                                                   </Typography>
@@ -54,9 +54,9 @@ const Feature = () => {
                                                   <Typography variant="body2" color='rgb(144, 148, 148)'>
                                                             {data.desc}
                                                   </Typography>
-                                        </Box>
+                                        </Grid>
                               ))}
-                    </div>
+                    </Grid>
           )
 }
 
