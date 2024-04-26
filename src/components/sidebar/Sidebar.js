@@ -28,7 +28,7 @@ export default function TemporaryDrawer() {
           const DrawerList = (
                     <>
 
-                              <Box sx={{ padding: 0.5 }} role="presentation" >
+                              <Box sx={{ padding: 0.5 }}  >
                                         <List>
                                                   <Typography sx={{ color: 'rgb(187, 186, 186)' }} variant="p" component="p">
                                                             Dashboard
