@@ -9,17 +9,7 @@ import Paper from '@mui/material/Paper';
 import './WidgetLg.css'
 import { Avatar, Typography } from '@mui/material';
 
-function createData(calories, fat, carbs, protein) {
-          return { calories, fat, carbs, protein };
-}
 
-const rows = [
-          createData(159, 6.0, 24, 4.0),
-          createData(237, 9.0, 37, 4.3),
-          createData(262, 16.0, 24, 6.0),
-          createData(305, 3.7, 67, 4.3),
-          createData(356, 16.0, 49, 3.9),
-];
 
 export default function BasicTable() {
           return (
