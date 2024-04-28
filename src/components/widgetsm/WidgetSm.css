@@ -1,0 +1,15 @@
+.widgetsm {
+          width: 100%;
+          box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.list-item-text {
+          text-align: center;
+}
+          
+.widgetsm-avatar{
+          width: 30px !important;
+          height: 30px !important;
+          border-radius: 25% !important;
+          cursor: pointer;
+}
