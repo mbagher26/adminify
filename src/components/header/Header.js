@@ -33,7 +33,7 @@ const Header = () => {
                                                   <div className="container-icon">
                                                             <LanguageIcon />
                                                   </div>
-                                                  <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+                                                  <Avatar alt="Travis Howard" src="/Image/avatar.jpg" />
                                         </div>
                               </div>
                     </Container>
