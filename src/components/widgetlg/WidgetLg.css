@@ -1,0 +1,28 @@
+.css-177gid-MuiTableCell-root {
+          border: none !important;
+          text-align: left !important;
+}
+
+.css-1azl6jz-MuiTableCell-root {
+          border: none !important;
+          text-align: left !important;
+          font-weight: bold !important;
+}
+
+.css-1tb2icn-MuiPaper-root-MuiTableContainer-root {
+          width: 100% !important;
+}
+
+.tabel-container {
+          box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75) !important;
+          
+}
+.cell {
+          display: flex !important;
+          flex-direction: row !important;
+          gap: 10px;
+}
+
+.css-dyvrhi-MuiTypography-root {
+          font-weight: bold !important;
+}
