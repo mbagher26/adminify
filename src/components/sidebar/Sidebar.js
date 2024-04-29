@@ -19,7 +19,6 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 import './Sidebar.css'
-import { Stack } from '@mui/system';
 
 
 export default function TemporaryDrawer() {
@@ -119,9 +118,7 @@ export default function TemporaryDrawer() {
 
           return (
                     <div className='saidebar'>
-                              <Stack className='drawer'>
-                                        {DrawerList}
-                              </Stack>
+                              {DrawerList}
                     </div>
           );
 }
