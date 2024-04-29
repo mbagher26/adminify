@@ -1,5 +1,11 @@
-.container {
+.App {
+          
           display: flex;
+          flex-direction: column;
+}
+.container {
+          position: relative;
+          
 }
 
 a {
