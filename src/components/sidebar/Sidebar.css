@@ -1,5 +1,5 @@
 .saidebar {
-          position: sticky;
+          position: fixed;
           background-color: rgb(251, 251, 255);
-          height: 92vh;
+          top: 53px;
 }
