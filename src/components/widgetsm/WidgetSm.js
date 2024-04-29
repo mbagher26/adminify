@@ -24,7 +24,7 @@ const WidgetSm = () => {
           }, []);
           return (
                     <div className='widgetsm'>
-                              <List dense sx={{ width: '100%' }}>
+                              <List sx={{ width: '100%' }}>
 
                                         <Typography sx={{ padding: '10px' }}>New Join Members</Typography>
                                         {widgetData && widgetData.map(data => (
