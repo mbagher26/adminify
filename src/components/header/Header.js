@@ -11,7 +11,7 @@ import './Header.css'
 
 const Header = () => {
           return (
-                    <Container fixed maxWidth='xl' className="topbar">
+                    <Container maxWidth='xl' className="topbar">
                               <div className="topbarwraper">
                                         <div className="topleft">
                                                   <Typography variant="h4" color="primary" gutterBottom>
