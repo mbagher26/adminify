@@ -33,7 +33,7 @@ const Feature = () => {
           return (
                     <Grid container className='feature'>
                               {featureData && featureData.map(data => (
-                                        <Grid xs={12} md={4} key={data.id} className='featurecontent'>
+                                        <Grid xs={12} item md={4} key={data.id} className='featurecontent'>
                                                   <Typography sx={{ fontSize: 20 }} color="rgb(76, 62, 75)">
                                                             {data.title}
                                                   </Typography>
