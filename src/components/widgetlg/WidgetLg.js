@@ -26,7 +26,6 @@ export default function BasicTable() {
                               }
                               if (data) {
                                         setRowData(data)
-                                        console.log(data);
                               }
                     }
                     fetchData()
@@ -34,6 +33,7 @@ export default function BasicTable() {
 
           return (
                     <TableContainer className='tabel-container' component={Paper}>
+                              <Typography>Latest TransActions</Typography>
                               
                               <Table aria-label="BasicTable">
                                         <TableHead>
