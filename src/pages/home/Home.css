@@ -1,13 +1,11 @@
 .home {
-          width: 100%;
+          position: absolute;
+          right: 0;
+          left: 180px;
+          top: 60px;
           display: flex;
           flex-direction: column;
           gap: 45px;
           padding: 30px;
 }
 
-.feature-grid {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-}
