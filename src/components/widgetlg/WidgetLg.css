@@ -15,7 +15,6 @@
 
 .tabel-container {
           box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75) !important;
-          
 }
 .cell {
           display: flex !important;
@@ -25,4 +24,9 @@
 
 .css-dyvrhi-MuiTypography-root {
           font-weight: bold !important;
+}
+
+.css-ahj2mt-MuiTypography-root {
+          font-weight: bold !important;
+          padding: 10px;
 }
