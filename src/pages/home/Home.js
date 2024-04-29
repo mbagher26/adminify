@@ -17,10 +17,10 @@ const Home = () => {
       <Feature />
       <Chart grid />
       <Grid container spacing={2}>
-        <Grid md={4} item>
+        <Grid xs={12} md={4} item>
           <WidgetSm />
         </Grid>
-        <Grid md={8} item>
+        <Grid xs={12} md={8} item>
           <WidgetLg />
         </Grid>
       </Grid>
