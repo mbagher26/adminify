@@ -27,11 +27,11 @@ const UserList = () => {
   }, []);
 
   const columns = [
-    { field: 'id', headerName: 'ID', width: 70 },
+    { field: 'id', headerName: 'ID', width: 80 },
     {
       field: 'username',
       headerName: 'User',
-      width: 250,
+      width: 260,
       renderCell: (params) => {
         return (
           <>
@@ -43,21 +43,21 @@ const UserList = () => {
         );
       }
     },
-    { field: 'email', headerName: 'Email', width: 150 },
+    { field: 'email', headerName: 'Email', width: 160 },
     {
       field: 'status',
       headerName: 'Status',
-      width: 120,
+      width: 130,
     },
     {
       field: 'transaction',
       headerName: 'Transaction',
-      width: 120,
+      width: 130,
     },
     {
       field: 'action',
       headerName: 'Action',
-      width: 120,
+      width: 130,
       renderCell: (params) => {
         return (
           <div className='user-action'>
