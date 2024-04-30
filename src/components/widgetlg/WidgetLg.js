@@ -8,7 +8,8 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import './WidgetLg.css'
 import { Avatar, Typography } from '@mui/material';
-import { useState, useEffect } from 'react';import supabase from '../../SupabaseClient';
+import { useState, useEffect } from 'react';
+import supabase from '../../SupabaseClient';
 
 
 
