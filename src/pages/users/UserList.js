@@ -3,7 +3,8 @@ import { DataGrid } from '@mui/x-data-grid';
 import { useState, useEffect } from 'react';
 import supabase from '../../SupabaseClient';
 import './UserList.css'
-import { Box } from '@mui/material';
+import { Box, Avatar } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const UserList = () => {
 
@@ -30,6 +31,16 @@ const UserList = () => {
       field: 'username',
       headerName: 'User',
       width: 250,
+      renderCell: (params) => {
+        return (
+          <>
+            <Link className='user-link' to='/'>
+              <Avatar src={params.row.avatar} />
+              {params.row.username}
+            </Link>
+          </>
+        );
+      }
     },
     { field: 'email', headerName: 'Email', width: 150 },
     {
