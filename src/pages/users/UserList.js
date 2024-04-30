@@ -5,6 +5,7 @@ import supabase from '../../SupabaseClient';
 import './UserList.css'
 import { Box, Avatar } from '@mui/material';
 import { Link } from 'react-router-dom';
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 
 const UserList = () => {
 
@@ -53,6 +54,19 @@ const UserList = () => {
       headerName: 'Transaction',
       width: 120,
     },
+    {
+      field: 'action',
+      headerName: 'Action',
+      width: 120,
+      renderCell: (params) => {
+        return (
+          <div className='user-action'>
+            <button>Edit</button>
+            <DeleteOutlineOutlinedIcon />
+          </div>
+        )
+      }
+    }
   ];
 
 
@@ -61,7 +75,12 @@ const UserList = () => {
       {rowData &&
         <DataGrid
           rows={rowData}
-          columns={columns}
+        columns={columns}
+        initialState={{
+          pagination: {
+            paginationModel: { page: 0, pageSize: 5 },
+          },
+        }}
         />}
     </Box>
   )
