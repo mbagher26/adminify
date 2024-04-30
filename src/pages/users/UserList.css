@@ -1,0 +1,34 @@
+.userlist {
+          position: absolute;
+          right: 0;
+          width: 1282px !important;
+          height: 400px;
+          padding: 30px;
+          margin-top: 56px;
+}
+
+.user-link {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 15px;
+          color: black;
+}
+
+.user-action {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+}
+
+.user-action button {
+          background-color: rgb(72, 241, 46);
+          border-radius: 15px;
+}
+
+.css-tgsonj {
+          display: none;
+}
