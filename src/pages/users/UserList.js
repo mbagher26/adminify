@@ -26,6 +26,29 @@ const UserList = () => {
     fetchData()
   }, []);
 
+  const deleteHandler = async (id) => {
+
+      const { data, error } = await supabase
+        .from("users")
+        .delete()
+        .eq('id', id)
+      if (error) {
+        console.log(error);
+      }
+      if (data) {
+        console.log(data);
+      }
+
+
+    const newrowData = rowData.filter(data => {
+      return data.id !== id
+    })
+
+    setRowData(newrowData)
+
+    
+  }
+
   const columns = [
     { field: 'id', headerName: 'ID', width: 80 },
     {
@@ -62,7 +85,9 @@ const UserList = () => {
         return (
           <div className='user-action'>
             <button>Edit</button>
-            <DeleteOutlineOutlinedIcon />
+           
+              <DeleteOutlineOutlinedIcon onClick={() => deleteHandler(params.row.id)} />
+            
           </div>
         )
       }
