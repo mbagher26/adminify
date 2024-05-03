@@ -25,3 +25,11 @@
 .product-name {
           font-weight: bold !important;
 }
+
+.product-info-item {
+          display: flex;
+          flex-direction: row !important;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 70px;
+}
