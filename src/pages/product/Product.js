@@ -1,4 +1,5 @@
 import { Box, Stack, Typography, Button } from '@mui/material'
+import Chart from './../../components/chart/Chart'
 import React from 'react'
 import './Product.css'
 
@@ -11,6 +12,10 @@ const Product = () => {
           Create
         </Button>
       </Stack>
+
+      < Stack className='product-chart' >
+        <Chart grid title="Sale In Month" data={productData} dataKey="sales"/>
+      </Stack >
     </Box>
   )
 }
