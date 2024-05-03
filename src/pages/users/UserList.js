@@ -6,6 +6,8 @@ import './UserList.css'
 import { Box, Avatar } from '@mui/material';
 import { Link } from 'react-router-dom';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
+import BorderColorOutlinedIcon from '@mui/icons-material/BorderColorOutlined';
+
 
 const UserList = () => {
 
@@ -58,7 +60,7 @@ const UserList = () => {
       renderCell: (params) => {
         return (
           <>
-            <Link className='user-link' to='/'>
+            <Link className='user-link' to={`/users/${params.id}`}>
               <Avatar src={params.row.avatar} />
               {params.row.username}
             </Link>
@@ -80,14 +82,20 @@ const UserList = () => {
     {
       field: 'action',
       headerName: 'Action',
-      width: 130,
+      width: 200,
       renderCell: (params) => {
         return (
-          <div className='user-action'>
-            <button>Edit</button>
-           
-              <DeleteOutlineOutlinedIcon onClick={() => deleteHandler(params.row.id)} />
-            
+          <div className='action'>
+            <Link to={`/users/${params.id}`}>
+              <div className='edit-icon'>
+                <BorderColorOutlinedIcon />
+                Edit
+              </div>
+            </Link>
+            <div className='btn-delete' onClick={() => deleteHandler(params.row.id)} >
+              <DeleteOutlineOutlinedIcon />
+              Delete
+            </div>
           </div>
         )
       }
