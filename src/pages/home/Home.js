@@ -32,7 +32,9 @@ const Home = () => {
   return (
     <Box className='home'>
       <Feature />
-      <Chart grid data={xAxisData} title='Month Sale' dataKey='sale'/>
+      <div className='home-chart'>
+        <Chart grid data={xAxisData} title='Month Sale' dataKey='sale' />
+      </div>
       <Grid container spacing={2}>
         <Grid className='grid-widget' xs={12} md={4} item>
           <WidgetSm />
