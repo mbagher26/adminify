@@ -1,4 +1,4 @@
-import { Box, Stack, Typography, Button, Avatar, Grid } from '@mui/material'
+import { Stack, Typography, Button, Avatar, Grid } from '@mui/material'
 import { useState, useEffect } from 'react'
 import Chart from './../../components/chart/Chart'
 import React from 'react'
