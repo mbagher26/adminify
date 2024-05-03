@@ -34,7 +34,7 @@ export default function BasicTable() {
 
           return (
                     <TableContainer className='tabel-container' component={Paper}>
-                              <Typography>Latest TransActions</Typography>
+                              <Typography padding='10px'>Latest TransActions</Typography>
                               
                               <Table aria-label="BasicTable">
                                         <TableHead>
