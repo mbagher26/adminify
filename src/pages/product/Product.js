@@ -47,28 +47,28 @@ const Product = () => {
         <Stack className='product-info-button'>
 
           <Stack className='product-info-item'>
-            <Stack className='product-key'>ID</Stack>
-            <Stack className='product-value'>1</Stack>
+            <Typography className='product-key'>ID</Typography>
+            <Typography className='product-value'>1</Typography>
           </Stack>
 
           <Stack className='product-info-item'>
-            <Stack className='product-key'>Name</Stack>
-            <Stack className='product-value'>Dell</Stack>
+            <Typography className='product-key'>Name</Typography>
+            <Typography className='product-value'>Dell</Typography>
           </Stack>
 
           <Stack className='product-info-item'>
-            <Stack className='product-key'>Sales</Stack>
-            <Stack className='product-value'>$90000</Stack>
+            <Typography className='product-key'>Sales</Typography>
+            <Typography className='product-value'>$90000</Typography>
           </Stack>
 
           <Stack className='product-info-item'>
-            <Stack className='product-key'>Active</Stack>
-            <Stack className='product-value'>yes</Stack>
+            <Typography className='product-key'>Active</Typography>
+            <Typography className='product-value'>yes</Typography>
           </Stack>
 
           <Stack className='product-info-item'>
-            <Stack className='product-key'>Is Stock</Stack>
-            <Stack className='product-value'>no</Stack>
+            <Typography className='product-key'>Is Stock</Typography>
+            <Typography className='product-value'>no</Typography>
           </Stack>
         </Stack>
       </Grid>
