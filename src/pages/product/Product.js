@@ -1,9 +1,30 @@
 import { Box, Stack, Typography, Button, Avatar } from '@mui/material'
+import { useState, useEffect } from 'react'
 import Chart from './../../components/chart/Chart'
 import React from 'react'
 import './Product.css'
+import supabase from '../../SupabaseClient'
 
 const Product = () => {
+
+  const [productData, setProductData] = useState();
+
+
+  useEffect(() => {
+    const fetchChartData = async () => {
+      const { data, error } = await supabase
+        .from("productsdata")
+        .select()
+      if (error) {
+        console.log(error);
+      }
+      if (data) {
+        setProductData(data)
+      }
+    }
+    fetchChartData()
+  }, []);
+
   return (
     <Box className='product'>
       <Stack direction='row' className="product-title-container">
