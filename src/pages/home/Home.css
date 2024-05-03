@@ -9,6 +9,10 @@
           padding: 30px;
 }
 
+.home-chart {
+          box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+}
+
 .grid-widget {
           box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
 }
