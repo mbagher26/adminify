@@ -41,7 +41,7 @@ const Product = () => {
 
       <Grid md={6} item className='product-info'>
         <Stack className='product-info-top'>
-          <Avatar src='/Image/dell.jpg' />
+          <Avatar src='/Image/dell.jpg' variant='square' sx={{ width: '160px', height: '80px', margin: '10px' }} />
           <Typography className='product-name'>Dell</Typography>
         </Stack>
         <Stack className='product-info-button'>
