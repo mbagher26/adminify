@@ -7,6 +7,12 @@
           margin-top: 56px;
 }
 
+.product-title-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+}
+
 .btn-create {
           width: 125px;
           background-color: teal !important;
