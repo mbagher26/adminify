@@ -13,3 +13,12 @@
           align-items: center;
           justify-content: space-between;
 }
+
+.btn-delete {
+          cursor: pointer;
+          color: rgb(25, 118, 210);
+}
+
+.edit-icon {
+          color: rgb(25, 118, 210);
+}
