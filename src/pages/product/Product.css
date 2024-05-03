@@ -7,3 +7,8 @@
           margin-top: 56px;
 }
 
+.btn-create {
+          width: 125px;
+          background-color: teal !important;
+}
+
