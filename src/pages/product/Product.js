@@ -67,7 +67,7 @@ const Product = () => {
           </Stack>
 
           <Stack className='product-info-item'>
-            <Stack className='product-key'>In Stock</Stack>
+            <Stack className='product-key'>Is Stock</Stack>
             <Stack className='product-value'>no</Stack>
           </Stack>
         </Stack>
