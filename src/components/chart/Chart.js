@@ -1,27 +1,11 @@
 import React from 'react'
 import { LineChart, Line, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import './Chart.css'
-import { useEffect, useState } from 'react'
-import supabase from '../../SupabaseClient'
+
 
 const Chart = ({ grid }) => {
 
-          const [xAxisData, setXAxisData] = useState(null);
-
-          useEffect(() => {
-                    const fetchChartData = async () => {
-                              const { data, error } = await supabase
-                                        .from("chart")
-                                        .select()
-                              if (error) {
-                                        console.log(error);
-                              }
-                              if (data) {
-                                        setXAxisData(data)
-                              }
-                    }
-                    fetchChartData()
-          }, []);
+      
 
           return (
                     <div className='chart'>
