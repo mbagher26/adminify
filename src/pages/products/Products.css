@@ -1,0 +1,9 @@
+.product-link {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 20px;
+          color: #000;
+}
+
