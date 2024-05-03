@@ -1,4 +1,4 @@
-import { Box, Stack, Typography, Button, Avatar } from '@mui/material'
+import { Box, Stack, Typography, Button, Avatar, Grid } from '@mui/material'
 import { useState, useEffect } from 'react'
 import Chart from './../../components/chart/Chart'
 import React from 'react'
@@ -26,20 +26,20 @@ const Product = () => {
   }, []);
 
   return (
-    <Box className='product'>
-      <Stack direction='row' className="product-title-container">
-        <Typography className="producttitle">Product</Typography>
+    <Grid container className='product'>
+      <Grid md={12} item direction='row' className="product-title-container">
+        <Typography className="producttitle" variant='h5'>Product</Typography>
         <Button variant="contained" className='btn-create'>
           Create
         </Button>
-      </Stack>
+      </Grid>
 
-      < Stack className='product-chart' >
-        <Chart grid title="Sale In Month" data={productData} dataKey="sales"/>
-      </Stack >
+      < Grid md={6} item className='product-chart' >
+        <Chart grid title="Sale In Month" data={productData} dataKey="sales" />
+      </Grid >
 
 
-      <Stack className='product-info'>
+      <Grid md={6} item className='product-info'>
         <Stack className='product-info-top'>
           <Avatar src='/Image/dell.jpg' />
           <Typography className='product-name'>Dell</Typography>
@@ -71,9 +71,8 @@ const Product = () => {
             <Stack className='product-value'>no</Stack>
           </Stack>
         </Stack>
-
-      </Stack>
-    </Box>
+      </Grid>
+    </Grid>
   )
 }
 
