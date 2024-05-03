@@ -2,18 +2,20 @@ import React from 'react'
 import { DataGrid } from '@mui/x-data-grid';
 import { useState, useEffect } from 'react';
 import supabase from '../../SupabaseClient';
-import { Box, Avatar } from '@mui/material';
+import { Box, Avatar} from '@mui/material';
 import { Link } from 'react-router-dom';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
+import BorderColorOutlinedIcon from '@mui/icons-material/BorderColorOutlined';
+import './Products.css'
 
-const UserList = () => {
+const Products = () => {
 
   const [rowData, setRowData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       const { data, error } = await supabase
-        .from("users")
+        .from("products")
         .select()
       if (error) {
         console.log(error);
@@ -28,7 +30,7 @@ const UserList = () => {
   const deleteHandler = async (id) => {
 
     const { data, error } = await supabase
-      .from("users")
+      .from("products")
       .delete()
       .eq('id', id)
     if (error) {
@@ -51,42 +53,42 @@ const UserList = () => {
   const columns = [
     { field: 'id', headerName: 'ID', width: 80 },
     {
-      field: 'username',
-      headerName: 'User',
-      width: 260,
+      field: 'title',
+      headerName: 'Title',
+      width: 170,
       renderCell: (params) => {
         return (
           <>
-            <Link className='user-link' to='/'>
+            <Link className='product-link' to={`/products/${params.id}`}>
               <Avatar src={params.row.avatar} />
-              {params.row.username}
+              {params.row.title}
             </Link>
           </>
         );
       }
     },
-    { field: 'email', headerName: 'Email', width: 160 },
     {
-      field: 'status',
-      headerName: 'Status',
-      width: 130,
-    },
-    {
-      field: 'transaction',
-      headerName: 'Transaction',
+      field: 'price',
+      headerName: 'Price',
       width: 130,
     },
     {
       field: 'action',
       headerName: 'Action',
-      width: 130,
+      width: 200,
       renderCell: (params) => {
         return (
-          <div className='user-action'>
-            <button>Edit</button>
-
-            <DeleteOutlineOutlinedIcon onClick={() => deleteHandler(params.row.id)} />
-
+          <div className='action'>
+            <Link to={`/products/${params.id}`}>
+              <div className='edit-icon'>
+                <BorderColorOutlinedIcon/>
+                Edit
+              </div>
+            </Link>
+            <div className='btn-delete' onClick={() => deleteHandler(params.row.id)} >
+              <DeleteOutlineOutlinedIcon />
+                Delete
+            </div>
           </div>
         )
       }
@@ -105,9 +107,10 @@ const UserList = () => {
               paginationModel: { page: 0, pageSize: 4 },
             },
           }}
+          checkboxSelection
         />}
     </Box>
   )
 }
 
-export default UserList
+export default Products
