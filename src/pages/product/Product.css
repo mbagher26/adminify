@@ -36,9 +36,11 @@
 }
 
 .product-info {
-          padding: 10px;
+          width: 100%;
+          height: 250px;
           border-radius: 15px;
-          box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75) !important
+          align-items: center;
+          box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
 }
 
 .product-name {
