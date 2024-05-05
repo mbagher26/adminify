@@ -66,3 +66,11 @@
           align-items: center;
           gap: 70px;
 }
+
+.MuiDataGrid-cell:focus {
+          outline: none !important;
+}
+
+.MuiDataGrid-cell:focus-within {
+          outline: none !important;
+}
