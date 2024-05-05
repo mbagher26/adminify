@@ -54,7 +54,9 @@
 }
 
 .product-name {
-          font-weight: bold !important;
+          width: 100%;
+          font-weight: 900 !important;
+          text-align: center;
 }
 
 .product-info-item {
