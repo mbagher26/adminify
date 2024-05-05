@@ -7,14 +7,15 @@
 }
 
 .product-title-container {
-          display: flex;
+          width: 100%;
           justify-content: space-between;
           align-items: center;
-          box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75) !important;
-          padding: 2px 15px;
+          box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
           border-radius: 15px;
+          box-sizing: border-box;
+          padding: 0 20px;
+          height: 70px;
 }
-
 .product-title {
           font-weight: 800;
 }
