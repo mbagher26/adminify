@@ -1,6 +1,7 @@
 import { Box, Stack, Typography, Button, Avatar, Grid } from '@mui/material'
 import { useState, useEffect } from 'react'
 import Chart from './../../components/chart/Chart'
+import PublishIcon from "@mui/icons-material/Publish";
 import React from 'react'
 import './Product.css'
 import supabase from '../../SupabaseClient'
@@ -29,7 +30,7 @@ const Product = () => {
     <Box className='product'>
       <Grid container={true} spacing={6}>
 
-        <Grid md={12} item >
+        <Grid xs={12} md={12} item >
           <Stack direction='row' className="product-title-container">
             <Typography className="product-title" variant='h5'>Product</Typography>
             <Button variant="contained" className='btn-create'>
@@ -38,14 +39,14 @@ const Product = () => {
           </Stack>
         </Grid>
 
-        < Grid md={6} item >
+        < Grid xs={12} md={6} item >
           <Stack className='product-chart'>
             <Chart grid title="Sale In Month" data={productData} dataKey="sales" />
           </Stack>
         </Grid >
 
 
-        <Grid md={6} item >
+        <Grid xs={12} md={6} item >
           <Stack direction='row' className='product-info'>
 
             <Stack className='product-info-left'>
@@ -82,6 +83,44 @@ const Product = () => {
             </Stack>
           </Stack>
         </Grid>
+
+        <Grid md={12} item>
+          <Stack direction='row' className='product-form'>
+
+            <form className='form'>
+              <div className='form-left'>
+                <label htmlFor="">Product Name</label>
+                <input className='input-product-name' placeholder='Dell laptop'/>
+
+                <label>Is Active</label>
+                <select name="" id="">
+                  <option value="">Yes</option>
+                  <option value="">No</option>
+                </select>
+
+                <label htmlFor="">Is Stock</label>
+                <select name="" id="">
+                  <option value="">Yes</option>
+                  <option value="">No</option>
+                </select>
+              </div>
+
+              <div className='form-right'>
+                <div className='form-uploader'> 
+                  <img src="/Image/dell.jpg" alt="" className='form-img'/>
+                  <label>
+                    <PublishIcon />
+                  </label>
+                <input type="file" style={{ display: 'none' }} />
+                </div>
+                <button className='btn-form-edit'>Uploade (Edite)</button>
+              </div>
+            </form>
+
+
+          </Stack>
+        </Grid>
+
       </Grid>
     </Box>
   )
