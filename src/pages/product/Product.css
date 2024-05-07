@@ -1,13 +1,13 @@
 .product {
           position: absolute;
           right: 0;
-          width: 1298px !important;
+          left: 180px;
           padding: 30px;
           margin-top: 54px;
 }
 
 .product-title-container {
-          width: 100%;
+
           justify-content: space-between;
           align-items: center;
           box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
@@ -16,6 +16,7 @@
           padding: 0 20px;
           height: 70px;
 }
+
 .product-title {
           font-weight: 800;
 }
@@ -73,4 +74,65 @@
 
 .MuiDataGrid-cell:focus-within {
           outline: none !important;
+}
+
+.product-form {
+          box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+          
+}
+
+.form {
+          width: 100%;
+          height: 250px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+}
+
+.form-left {
+          width: 20%;
+          height: 70%;
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+}
+
+.form-left > label {
+
+          color: gray;
+}
+
+.input-product-name {
+          border: none;
+          border-bottom: 2px solid gray ;
+}
+
+.form-right {
+          width: 20%;
+          height: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+}
+
+.form-uploader {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+}
+
+.btn-form-edit {
+          width: 150px;
+          height: 30px;
+          color: white;
+          background-color: blue;
+          border-radius: 5px;
+          font-weight: bold;
+}
+ 
+.form-img {
+          width: 150px;
+          height: 100px;
 }
